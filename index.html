@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국순당</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="modal_back"></div>
+    <div class="popup_age">
+        <p>(주)국순당 홈페이지는 만 19세 이상만 이용이 가능합니다. <span>생년월일을 입력해주세요.</span></p>
+        <form>
+            <fieldset>
+                <label for="user_year" style="display: none;">년</label>
+                <select id="user_year">
+                    <option selected>연도</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>    
+                    <option>1997</option>    
+                    <option>1996</option>    
+                    <option>1995</option>
+                </select>
+                <label for="user_month" style="display: none;">월</label>
+                <select id="user_month">
+                    <option selected>월</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <label for="user_day" style="display: none;">일</label>
+                <select id="user_day">
+                    <option selected>일</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </fieldset>
+            <fieldset class="checked">
+                <p class="check">
+                    <input type="checkbox" id="user_agree">
+                    <label for="user_agree">재방문시 편리한 방문을 위한 쿠키정보 활용에 동의합니다.</label>
+                </p>
+                <input id="enter" type="submit" value="입장하기">
+            </fieldset>
+        </form>
+    </div>
+    <header>
+        <div class="nav inner_content">
+            <div class="nav_content">
+                <div class="nav_wrap">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo_white.png" alt="국순당 로고"></a>
+                    </div>
+                    <div class="util">
+                        <ul class="login">
+                            <li class="btn_login"><a href="#">로그인</a></li>
+                            <li class="btn_regis"><a href="#">회원가입</a></li>
+                        </ul>
+                        <div class="gnb_btn">
+                            <img src="./img/btn_white.png" alt="메뉴버튼">
+                        </div>
+                        <div class="modal_gnb"></div>
+                        <ul class="gnb_mo">
+                            <div class="gnb_btn_close">
+                                <a href="#">
+                                    <img src="./img/close.png" alt="닫기">
+                                </a>
+                            </div>
+                            <li>
+                                <a href="#">회사소개</a>
+                                <ul>
+                                    <li><a href="#">국순당개요</a></li>
+                                    <li><a href="#">녹색기업</a></li>
+                                    <li><a href="#">사회공헌</a></li>
+                                    <li><a href="#">주향로 견학</a></li>
+                                    <li><a href="#">회사위치</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">우리술 이야기</a>
+                                <ul>
+                                    <li><a href="#">우리술 알기</a></li>
+                                    <li><a href="#">우리술 복원사업</a></li>
+                                    <li><a href="#">우리술 교육</a></li>
+                                    <li><a href="#">국순당 술의 특징</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./sub_product.html">제품소개</a>
+                                <ul>
+                                    <li><a href="#">법고창신</a></li>
+                                    <li><a href="./sub_product.html">백세주</a></li>
+                                    <li><a href="#">막걸리</a></li>
+                                    <li><a href="#">예담</a></li>
+                                    <li><a href="#">계열사제품</a></li>
+                                    <li><a href="#">수입주류</a></li>
+                                    <li><a href="#">선물세트</a></li>
+                                    <li><a href="#">지난 제품 보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">홍보마당</a>
+                                <ul>
+                                    <li><a href="#">홍보영화</a></li>
+                                    <li><a href="#">국순당 소식</a></li>
+                                    <li><a href="#">광고자료</a></li>
+                                    <li><a href="#">고객상담실</a></li>
+                                    <li><a href="#">사이버감사실</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">백세주 마을</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul>
+                            <li><a href="#">국순당개요</a></li>
+                            <li><a href="#">녹색기업</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">주향로 견학</a></li>
+                            <li><a href="#">회사위치</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">우리술 이야기</a>
+                        <ul>
+                            <li><a href="#">우리술 알기</a></li>
+                            <li><a href="#">우리술 복원사업</a></li>
+                            <li><a href="#">우리술 교육</a></li>
+                            <li><a href="#">국순당 술의 특징</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sub_product.html">제품소개</a>
+                        <ul>
+                            <li><a href="#">법고창신</a></li>
+                            <li><a href="./sub_product.html">백세주</a></li>
+                            <li><a href="#">막걸리</a></li>
+                            <li><a href="#">예담</a></li>
+                            <li><a href="#">계열사제품</a></li>
+                            <li><a href="#">수입주류</a></li>
+                            <li><a href="#">선물세트</a></li>
+                            <li><a href="#">지난 제품 보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보마당</a>
+                        <ul>
+                            <li><a href="#">홍보영화</a></li>
+                            <li><a href="#">국순당 소식</a></li>
+                            <li><a href="#">광고자료</a></li>
+                            <li><a href="#">고객상담실</a></li>
+                            <li><a href="#">사이버감사실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">백세주 마을</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner_content">
+                <img src="./img/banner_text.png" alt="좋은 술은 좋은 자연이 빚습니다">
+                <p>
+                    국순당은 전통주 업계 최초로 환경부에서 지정한<br> 
+                    녹색기업으로 선정되었습니다.
+                </p>
+                <a class="btn_banner btn_1 no_scroll" href="#">녹색기업이란?</a>
+            </div>
+            <div class="blackscreen"></div>
+            <video src="./vid/16688-275409274_small.mp4" muted autoplay loop></video>
+        </section>
+        <div class="wrap">
+            <section class="product">
+                <h2>국순당의 대표술</h2>
+                <div class="prod_list  inner_content">
+                    <div class="prod_bg"></div>
+                    <ul>
+                        <li>
+                            <div class="container">
+                                <img src="./img/alc1.png" alt="백세주">
+                            </div>
+                            <h3>백세주</h3>
+                            <p>
+                                설갱미와 좋은 누룩,<br>
+                                12가지 한약재로 빚은<br>
+                                우리나라 대표술
+                            </p>
+                            <a class="more no_scroll" href="#">자세히 알아보기</a>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/alc2.png" alt="국순당 생막걸리">
+                            </div>
+                            <h3>국순당 생막걸리</h3>
+                            <p>
+                                두 번의 쌀 발효에<br>
+                                세 번의 유산균 발표를 더해 빚은<br> 
+                                생막걸리
+                            </p>
+                            <a class="more no_scroll" href="#">자세히 알아보기</a>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/alc3.png" alt="프리바이오 막걸리">
+                            </div>
+                            <h3>프리바이오 막걸리</h3>
+                            <p>
+                                내 몸속 1000억마리<br>
+                                유산균을 키우는<br>
+                                프로바이오틱스 막걸리
+                            </p>
+                            <a class="more no_scroll" href="#">자세히 알아보기</a>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./img/alc4.png" alt="옛날 막걸리">
+                            </div>
+                            <h3>옛날 막걸리</h3>
+                            <p>
+                                옛날방식 그대로<br>
+                                막걸리 본래 맛을 복원한<br>
+                                정통 막걸리
+                            </p>
+                            <a class="more no_scroll" href="#">자세히 알아보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="slider">
+                <div class="inner_content">
+                    <div class="slide">
+                        <div class="slide_div">
+                            <h4>국순당 이야기</h4>
+                            <p class="des font">
+                                국순당은 우리술 문화를 되살리며,<br>
+                                대한민국을 대표하는 세계적 명주를<br>
+                                만들기 위해 노력합니다
+                            </p>
+                        </div>
+                        <div class="slide_ul">
+                            <ul class="ul_title">
+                                <li class="on"><a href="#">주향로</a></li>
+                                <li><a href="#">국순당 막걸리</a></li>
+                                <li><a href="#">좋은술 백세주</a></li>
+                            </ul>
+                            <div class="station">
+                                <ul class="ul_train">
+                                    <li>
+                                        <div>
+                                            <div class="gra_background"></div>
+                                            <img src="./img/slideB_4.jpg" alt="주향로 이미지">
+                                        </div>
+                                        <div class="abs">
+                                            <span>술 향기 가득한 길</span>
+                                            <p>
+                                                농림축산식품부가 지정한 찾아가는 양조장인 주향로<br>
+                                                국순당 횡성양조장에 자리한<br>
+                                                우리술 역사와 문화 체험공간입니다.
+                                            </p>
+                                            <a href="#" class="btn_1">양조장 견학신청</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="gra_background"></div>
+                                            <img src="./img/slideB_2.jpg" alt="국순당 막걸리">
+                                        </div>
+                                        <div class="abs">
+                                            <span>국순당 막걸리</span>
+                                            <p>
+                                                국순당은 우리 조상들이 즐겨 마셨던 막걸리를<br>
+                                                계승, 발전시켜 높은 품질의 막걸리를 만들기 위하여<br>
+                                                최상의 원료 사용과 기술 개발에 힘쓰고 있습니다.
+                                            </p>
+                                            <a href="#" class="btn_1">제품 보러가기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="gra_background"></div>
+                                            <img src="./img/slideB_1.jpg" alt="우리술 백세주">
+                                        </div>
+                                        <div class="abs">
+                                            <span>좋은술 백세주 활용법</span>
+                                            <p>
+                                                MZ들이 사랑하는 하이볼<br>
+                                                이제는 집에서도 간편하게 '조선 하이볼'을 즐기세요!<br>
+                                                토닉워터는 필수! 레몬은 선택!
+                                            </p>
+                                            <a href="./sub_product.html" class="btn_1">백세주 알아보기</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="controls" style="display: none;">
+                                    <button id="playButton">Play</button>
+                                    <button id="stopButton">Stop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="inner_content">
+                    <div class="news_wrap">
+                        <h4>우리술 이야기</h4>
+                        <p class="font">
+                            우리나라의 문화와 전통을 더욱<br>
+                            계승 발전시켜 오늘날 올바른 음주문화<br>
+                            정착에 기여하는 국순당
+                        </p>
+                        <a href="#" class="btn_2 no_scroll">우리술 바로알기</a>
+                    </div>
+                    <div class="news_img">
+                        <img src="./img/baeksaeju.png" alt="백세주 이미지">
+                    </div>
+                </div>
+            </section>
+            <section  class="notice inner_content">
+                <div>
+                    <h4>국순당의 활동</h4>
+                    <p class="font">
+                        국순당은 주류 및 식음료 문화를<br>
+                        선도하는 기업으로서<br>
+                        최고의 제품을 만들어 <b>건강한 생활과</b><br>
+                        <b>행복한 세상</b>을 만드는데 기여합니다
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="notice_img">
+                            <img src="./img/notice1.png" alt="우리술교육 이미지">
+                        </div>
+                        <h5>우리술교육</h5>
+                        <p>
+                            우리술을 바르게 알고<br>
+                            즐기는 방법
+                        </p>
+                        <a class="more no_scroll" href="#">자세히 알아보기</a>
+                    </li>
+                    <li>
+                        <div class="notice_img">
+                            <img src="./img/notice2.png" alt="양조장 견학 이미지">
+                        </div>
+                        <h5>양조장 견학</h5>
+                        <p>
+                            국내 최대 규모의 전통주 양조장<br>
+                            온라인 견학 신청
+                        </p>
+                        <a class="more no_scroll" href="#">자세히 알아보기</a>
+                    </li>
+                    <li>
+                        <div class="notice_img">
+                            <img src="./img/notice3.png" alt="고객상담실 이미지">
+                        </div>
+                        <h5>고객상담실</h5>
+                        <p>
+                            궁금하신 부분 확인하기<br>
+                            고객의 소리 작성하기
+                        </p>
+                        <a class="more no_scroll" href="#">자세히 알아보기</a>
+                    </li>
+                    <li>
+                        <div class="notice_img">
+                            <img src="./img/notice4.png" alt="글로벌 사이트 이미지">
+                        </div>
+                        <h5>글로벌 사이트</h5>
+                        <p>
+                            Kooksoondang<br>
+                            Global site
+                        </p>
+                        <a class="more no_scroll" href="#">자세히 알아보기</a>
+                    </li>
+                </ul>
+            </section>
+            <div class="btn_top sticky">
+                <a href="#">TOP</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sns">
+            <ul>
+                <li><a href="https://www.facebook.com/kooksoondang/" target="_blank"><img src="./img/facebookicon.png" alt="국순당 페이스북">페이스북</a></li>
+                <li><a href="https://www.instagram.com/kooksoondang/" target="_blank"><img src="./img/igicon.png" alt="국순당 인스타그램">인스타그램</a></li>
+                <li><a href="https://www.youtube.com/@kooksoondang" target="_blank"><img src="./img/youtubeicon.png" alt="국순당 유튜브">유튜브</a></li>
+            </ul>
+        </div>
+        <div class="f_link">
+            <a href="#">개인정보취급방침</a>
+            <a href="#">회원약관</a>
+            <form>
+                <select class="family" name="family" id="familySite">
+                    <option value="" selected>패밀리 사이트</option>
+                    <option value="1">법고창신</option>
+                    <option value="2">백세주 브랜드 사이트</option>
+                    <option value="3">예담 브랜드 사이트</option>
+                    <option value="4">주향로</option>
+                    <option value="5">우리술 아름터</option>
+                    <option value="6">국순당 여주명가</option>
+                    <option value="7">국순당 고창명주</option>
+                </select>
+            </form>
+        </div>
+        <ul class="f_info">
+            <li>대표 : 배상민</li>
+            <li>사업자등록번호 : 124-81-14925</li>
+            <li>고객센터 : 080-0035-100</li>
+            <li>
+                <address>
+                    주소 : 강원특별자치도 횡성군 둔내면 강변로 975
+                </address>
+            </li>
+        </ul>
+        <a href="./index.html"><img src="./img/logo_brown.png" alt="국순당 로고"></a>
+        <p class="copy">COPYRIGHT&copy; 2009 by KOOKSOONDANG BREWERY CO,LTD</p>
+    </footer>
+</body>
+</html>

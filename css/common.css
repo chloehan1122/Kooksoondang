@@ -1,0 +1,61 @@
+/* common */
+html{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* button */
+.more{
+    border: 1px solid #c0a684;
+    border-radius: 30px;
+    color: #c0a684;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    position: absolute;
+    left: calc((15% - 20px));
+    bottom: 0;
+    width: 70%;
+}
+.more:hover{
+    background: #c0a684;
+    color: #fff;
+}
+.btn_1:hover{
+    background: #f68c22;
+    color: #f6f4dd;
+    border: transparent;
+}
+.btn_2:hover{
+    background: #c0a684;
+    color: #f6f4dd;
+}
+/* mobile */
+@media (max-width:767px){
+    .more {
+        bottom: 30px;
+        padding: 5px 10px;
+        font-size: 12px;
+        width: 50%;
+        left: 20%;
+    }
+    .gra_background{
+        display: none;
+    }
+    .station{
+        overflow: hidden;
+    }
+    .slide {
+        margin-top: 50px;
+    }
+    .ul_train>li{
+        margin-top: 10px;
+    }
+    .ul_train>li .abs{
+        margin-top: 30px;
+    }
+    .ul_train>li .abs p{
+        margin: 30px 0;
+    }
+}
