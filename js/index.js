@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    // $("body").addClass("hidden");
+    $("body").addClass("hidden");
 
     // // 연령제한 팝업[테스트]
     // $("#enter").click(function(event){
