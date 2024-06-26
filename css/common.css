@@ -3,20 +3,21 @@ html{
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     width: 100%;
+    scrollbar-gutter: stable;
+}
+body.hidden{
+    overflow: hidden;
+    height: 100vh;
 }
 
 /* button */
-.more{
+.more {
     border: 1px solid #c0a684;
     border-radius: 30px;
     color: #c0a684;
     font-size: 14px;
     font-weight: 400;
-    padding: 10px 20px;
-    position: absolute;
-    left: calc((15% - 20px));
-    bottom: 0;
-    width: 70%;
+    padding: 10px 30px;
 }
 .more:hover{
     background: #c0a684;
@@ -34,28 +35,7 @@ html{
 /* mobile */
 @media (max-width:767px){
     .more {
-        bottom: 30px;
-        padding: 5px 10px;
+        padding: 5px 15px;
         font-size: 12px;
-        width: 50%;
-        left: 20%;
-    }
-    .gra_background{
-        display: none;
-    }
-    .station{
-        overflow: hidden;
-    }
-    .slide {
-        margin-top: 50px;
-    }
-    .ul_train>li{
-        margin-top: 10px;
-    }
-    .ul_train>li .abs{
-        margin-top: 30px;
-    }
-    .ul_train>li .abs p{
-        margin: 30px 0;
     }
 }
