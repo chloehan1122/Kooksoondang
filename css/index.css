@@ -370,8 +370,8 @@ video{
 .slider{
     width: 100%;
     position: relative;
-    /* overflow: hidden;
-    padding-bottom: 50px; */
+    overflow: hidden;
+    /* padding-bottom: 50px; */
 }
 .slide{
     margin-top: 162px;
