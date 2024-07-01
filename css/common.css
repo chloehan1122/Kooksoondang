@@ -18,6 +18,7 @@ body.hidden{
     font-size: 14px;
     font-weight: 400;
     padding: 10px 30px;
+    display: inline-block;
 }
 .more:hover{
     background: #c0a684;

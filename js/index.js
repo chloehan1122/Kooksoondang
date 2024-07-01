@@ -1,13 +1,31 @@
 $(document).ready(function(){
 
-    $("body").addClass("hidden");
+    let lastScrollTop = 0;
+    let scrTop = 0;
+    $(window).scroll(function(){
+        scrTop = $(window).scrollTop();
+        if (scrTop > lastScrollTop) {
+            // 스크롤을 내릴 때 gnb 숨기기
+            console.log("스크롤을 내렸을 때")
+        } else {
+            console.log("스크롤을 올렸을 때")
+        }
+        lastScrollTop = scrTop;
+    });
 
-    // // 연령제한 팝업[테스트]
-    // $("#enter").click(function(event){
-    //     event.preventDefault(); // 폼 제출 막기!!!
-    //     $(".modal_back").addClass("hidden")
-    //     $(".popup_age").addClass("hidden")
-    // })
+    // 연령제한 쿠키
+    if (getCookie("hiddenPopup") != "true") {
+        // document.getElementById("popup").style.display = "block";
+        $('.modal_back').removeClass('hidden');
+        $('.popup_age').removeClass('hidden');
+        $("body").addClass("hidden");
+    } else {
+        // document.getElementById("popup").style.display = "none";
+        $('.modal_back').addClass('hidden');
+        $('.popup_age').addClass('hidden');
+        $("body").removeClass("hidden");
+    }
+    // $("body").addClass("hidden");
     
     // 연령제한 팝업
     $('#enter').click(function(e){
@@ -39,6 +57,7 @@ $(document).ready(function(){
             $('.modal_back').addClass('hidden');
             $('.popup_age').addClass('hidden');
             $("body").removeClass("hidden");
+            setCookie("hiddenPopup","true",1)
         } else {
             alert('만 19세 이상만 이용이 가능합니다.');
             // $("body").addClass("hidden");
