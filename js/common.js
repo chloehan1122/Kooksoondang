@@ -9,7 +9,7 @@ $(document).ready(function(){
     })
 
     // TOP 버튼 (.btn_top) => fixed?
-    console.log($(".btn_top").offset().top)
+    // console.log($(".btn_top").offset().top)
     $(".btn_top").click(function(){
         $("html").animate({ scrollTop: 0 }, 400);
     });

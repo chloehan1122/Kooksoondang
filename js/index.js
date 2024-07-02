@@ -1,14 +1,23 @@
 $(document).ready(function(){
 
+    window.scrollTo(0, 1); // 페이지 로드 후 스크롤을 강제로 1px 아래로 이동
+    window.scrollTo(0, 0); // 다시 맨 위로 스크롤하여 스크롤 이벤트를 트리거
+
     let lastScrollTop = 0;
     let scrTop = 0;
     $(window).scroll(function(){
         scrTop = $(window).scrollTop();
         if (scrTop > lastScrollTop) {
-            // 스크롤을 내릴 때 gnb 숨기기
             console.log("스크롤을 내렸을 때")
+            $("header").addClass("noshow")
+            $("header").removeClass("halfshow")
+        } else if (scrTop == 0){
+            $("header").removeClass("noshow")
+            $("header").removeClass("halfshow")
         } else {
             console.log("스크롤을 올렸을 때")
+            $("header").removeClass("noshow")
+            $("header").addClass("halfshow")
         }
         lastScrollTop = scrTop;
     });
