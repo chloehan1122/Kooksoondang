@@ -907,7 +907,6 @@ footer .copy{
         font-size: 24px;
     }
     .prod_list{
-        position: relative;
         height: 85%;
     }
     .prod_list ul{
@@ -942,12 +941,11 @@ footer .copy{
     .prod_bg{
         background: #f6f4dd;
         position: absolute;
+        height: 80%;
         bottom: 0;
         right: 0;
         left: 0;
-        top: 5%;
         z-index: -1;
-        height: auto;
         border-top-left-radius: 300px;
         border-top-right-radius: 300px;
         border-bottom-left-radius: 0;
@@ -1005,6 +1003,7 @@ footer .copy{
     .notice ul p {
         font-size: 13px;
         min-height: 50px;
+        word-break: keep-all;
     }
     .notice li {
         height: auto;
@@ -1072,7 +1071,8 @@ footer .copy{
     }
     .banner p {
         font-size: 17px;
-        padding: 0 10px;
+        font-weight: 300;
+        padding: 0 20px;
         box-sizing: border-box;
     }
     .prod_list ul li {
@@ -1149,7 +1149,7 @@ footer .copy{
         display:none;
     }
     .ul_title {
-        /* justify-content: center; */
+        justify-content: center;
         width: 100%;
         word-break: keep-all;
         text-wrap: nowrap;
