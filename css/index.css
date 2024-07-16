@@ -1170,8 +1170,23 @@ footer .copy{
     .checked{
         display: block;
     }
+    .check{
+        display: flex;
+        justify-content: center;
+    }
+    #user_agree{
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    #user_agree label{
+        display: inline-block;
+        padding-left: 8px;
+    }
     #enter{
         display: grid;
+        margin: 50px auto;
+        width: 300px;
     }
     .popup_age{
         background: url("../img/modal_img_.png") no-repeat 50% 50% / cover;
@@ -1187,16 +1202,19 @@ footer .copy{
         height: 200px;
     }
     .popup_age select {
-        width: 130px;
-        margin: 10px 0;
+        width: 95px;
+        margin: 5px;
     }
-    .popup_age>p{
-        font-size: 22px;
+    .popup_age>p {
+        font-size: 18px;
         color: #0f0f0f;
         margin-bottom: 30px;
+        padding: unset;
     }
-    .popup_age fieldset:first-of-type{
+    .popup_age fieldset:first-of-type {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 30px;
     }
 }
