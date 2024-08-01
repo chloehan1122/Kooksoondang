@@ -343,14 +343,11 @@ video{
     position: relative;
 }
 .product h2 {
-    height: 250px;
+    height: 200px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.prod_list{
-    height: 80%;
 }
 .prod_list ul{
     display: flex;
@@ -390,7 +387,7 @@ video{
     height: 500px;
     background: #f6f4dd;
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
     right: 0;
     left: 5%;
     z-index: -1;
@@ -877,6 +874,9 @@ footer .copy{
         content: "";
         width: 64px;
     }
+    .banner_content{
+        margin-top: 280px;
+    }
     .banner_content img{
         width: 80%;
     }
@@ -897,7 +897,8 @@ footer .copy{
     }
     .product{
         box-sizing: border-box;
-        height: 100vh;
+        padding-bottom: 50px;
+        /* height: 100vh; */
     }
     .product h2{
         text-align: center;
@@ -906,9 +907,9 @@ footer .copy{
         box-sizing: border-box;
         font-size: 24px;
     }
-    .prod_list{
+    /* .prod_list{
         height: 85%;
-    }
+    } */
     .prod_list ul{
         display: flex;
         flex-wrap: wrap;
