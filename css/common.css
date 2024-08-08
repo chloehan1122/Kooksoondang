@@ -5,9 +5,16 @@ html{
     width: 100%;
     scrollbar-gutter: stable;
 }
-body.hidden{
+/* 팝업용 -> 팝업 오픈 시 스크롤 방지 */
+/* body.hidden{
     overflow: hidden;
     height: 100vh;
+} */
+ .all{
+    overflow: hidden;
+ }
+br.erase{
+    display: none;
 }
 
 /* button */
@@ -24,19 +31,19 @@ body.hidden{
     background: #c0a684;
     color: #fff;
 }
-.btn_1:hover{
+.btn_1:hover {
     background: #f68c22;
     color: #f6f4dd;
-    border: transparent;
+    border: 1px solid transparent;
 }
 .btn_2:hover{
     background: #c0a684;
     color: #f6f4dd;
 }
 /* mobile */
-@media (max-width:767px){
+/* @media (max-width:767px){
     .more {
         padding: 5px 15px;
         font-size: 12px;
     }
-}
+} */

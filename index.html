@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국순당</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/cookie.js"></script>
     <script src="./js/common.js"></script>
@@ -18,7 +18,7 @@
     
 </head>
 <body>
-    <div class="modal_back"></div>
+    <!-- <div class="modal_back"></div>
     <div class="popup_age">
         <p>(주)국순당 홈페이지는 만 19세 이상만 이용이 가능합니다. <span>생년월일을 입력해주세요.</span></p>
         <form>
@@ -117,7 +117,7 @@
                 <input id="enter" type="submit" value="입장하기">
             </fieldset>
         </form>
-    </div>
+    </div> -->
     <header>
         <div class="nav inner_content">
             <div class="nav_content">
@@ -247,8 +247,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="banner">
+    <div class="all">
+        <div class="banner">
             <div class="banner_content">
                 <img src="./img/banner_text.png" alt="좋은 술은 좋은 자연이 빚습니다">
                 <p>
@@ -259,12 +259,11 @@
             </div>
             <div class="blackscreen"></div>
             <video src="./vid/16688-275409274_small.mp4" muted autoplay loop playsinline></video>
-        </section>
+        </div>
         <div class="wrap">
             <section class="product">
                 <h2>국순당의 대표술</h2>
-                <div class="prod_list  inner_content">
-                    <div class="prod_bg"></div>
+                <div class="prod_list prod_bg">
                     <ul>
                         <li>
                             <div class="container">
@@ -285,7 +284,7 @@
                             <h3>국순당 생막걸리</h3>
                             <p>
                                 두 번의 쌀 발효에<br>
-                                세 번의 유산균 발표를 더해 빚은<br class="removeBr"> 
+                                세 번의 유산균 발표를 더해 빚은<br class="remove"> 
                                 생막걸리
                             </p>
                             <a class="more no_scroll" href="#">자세히 알아보기</a>
@@ -344,11 +343,11 @@
                                         <div class="abs">
                                             <span>술 향기 가득한 길</span>
                                             <p>
-                                                농림축산식품부가 지정한 찾아가는 양조장인 주향로는<br class="removeBr">
-                                                국순당 횡성양조장에 자리한<br class="removeBr">
+                                                농림축산식품부가 지정한 찾아가는 양조장인 주향로는<br class="remove">
+                                                국순당 횡성양조장에 자리한<br class="remove">
                                                 우리술 역사와 문화 체험공간입니다.
                                             </p>
-                                            <a href="#" class="btn_1">양조장 견학신청</a>
+                                            <a href="#" class="btn_1 no_scroll">양조장 견학신청</a>
                                         </div>
                                     </li>
                                     <li>
@@ -360,10 +359,10 @@
                                             <span>국순당 막걸리</span>
                                             <p>
                                                 국순당은 우리 조상들이 즐겨 마셨던 막걸리를<br>
-                                                계승, 발전시켜 높은 품질의 막걸리를 만들기 위하여<br class="removeBr">
+                                                계승, 발전시켜 높은 품질의 막걸리를 만들기 위하여<br class="remove">
                                                 최상의 원료 사용과 기술 개발에 힘쓰고 있습니다.
                                             </p>
-                                            <a href="#" class="btn_1">제품 보러가기</a>
+                                            <a href="#" class="btn_1 no_scroll">제품 보러가기</a>
                                         </div>
                                     </li>
                                     <li>
@@ -375,10 +374,10 @@
                                             <span>좋은술 백세주 활용법</span>
                                             <p>
                                                 MZ들이 사랑하는 하이볼<br>
-                                                이제는 집에서도 간편하게 '조선 하이볼'을 즐기세요!<br class="removeBr">
+                                                이제는 집에서도 간편하게 '조선 하이볼'을 즐기세요!<br class="remove">
                                                 토닉워터는 필수! 레몬은 선택!
                                             </p>
-                                            <a href="#" class="btn_1">백세주 알아보기</a>
+                                            <a href="#" class="btn_1 no_scroll">백세주 알아보기</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -396,8 +395,8 @@
                     <div class="news_wrap">
                         <h4>우리술 이야기</h4>
                         <p class="font">
-                            우리나라의 문화와 전통을 더욱<br class="removeBr">
-                            계승 발전시켜 오늘날 올바른 음주문화<br class="removeBr">
+                            우리나라의 문화와 전통을 더욱<br class="remove">
+                            계승 발전시켜 오늘날 올바른 음주문화<br class="remove">
                             정착에 기여하는 국순당
                         </p>
                         <a href="#" class="btn_1 no_scroll">우리술 바로알기</a>
@@ -411,10 +410,9 @@
                 <div>
                     <h4>국순당의 활동</h4>
                     <p class="font">
-                        국순당은 주류 및 식음료 문화를<br>
-                        선도하는 기업으로서<br>
-                        최고의 제품을 만들어 <b>건강한 생활과</b><br>
-                        <b>행복한 세상</b>을 만드는데 기여합니다
+                        국순당은 주류 및 식음료 문화를 선도하는 기업으로서<br class="remove1 remove">
+                        최고의 제품을 만들어 건강한 생활과</b><br class="remove1 remove">
+                        <b>행복한 세상</b>을 만드는데 기여합니다.
                     </p>
                 </div>
                 <ul>
@@ -468,7 +466,7 @@
                 <a href="#"><img src="./img/btn_top_.png" alt="TOP"></a>
             </div>
         </div>
-    </main>
+    </div>
     <footer>
         <div class="sns">
             <ul>
