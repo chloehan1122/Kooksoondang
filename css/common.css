@@ -26,6 +26,8 @@ br.erase{
     font-weight: 400;
     padding: 10px 30px;
     display: inline-block;
+    word-break: keep-all;
+    text-wrap: nowrap;
 }
 .more:hover{
     background: #c0a684;

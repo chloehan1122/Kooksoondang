@@ -543,6 +543,7 @@ video{
     font-weight: 500;
     color: #4f4f4f;
     margin: 20px 0 40px;
+    word-break: keep-all;
 }
 .news a {
     display: inline-block;
@@ -651,6 +652,8 @@ footer{
 .sns li a{
     display: flex;
     align-items: center;
+    word-break: keep-all;
+    text-wrap: nowrap;
 }
 .sns>ul>li:last-of-type{
     margin-right: 0;
